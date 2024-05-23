@@ -1,0 +1,126 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.controls select {
+  margin-right: 10px;
+}
+
+.code-editor-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.code-editor,
+.output {
+  flex: 1;
+  height: 100%;
+}
+
+.output {
+  border-left: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+
+.App.light {
+  background-color: #ffffff; /* Light background color */
+  color: #000000; /* Black text color */
+}
+
+.App.dark {
+  background-color: #000000; /* Dark background color */
+  color: #ffffff; /* White text color */
+}
+
+.controls, .output {
+  background-color: inherit; /* Inherit background color from the parent */
+}
+
+.controls button, .output {
+  color: inherit; /* Inherit text color from the parent */
+}
+
+/* Add specific styles for the dark theme */
+.App.dark .controls, .App.dark .output {
+  background-color: #000000; /* Dark background color */
+}
+
+.App.dark .controls button, .App.dark .output {
+  color: #ffffff; /* White text color */
+}
+
+/* Add common styles for the buttons */
+
+
+/* Add specific styles for the "Set Default" button */
+.set-default-button {
+  background-color: #007bff; /* Blue background color */
+  color: #ffffff; /* White text color */
+}
+
+/* Add specific styles for the "Submit" button */
+.submit-button {
+  background-color: #28a745; /* Green background color */
+  color: #ffffff; /* White text color */
+}
+
+/* Add specific styles for the "Toggle Theme" button */
+.theme-toggle-button {
+  background-color: #e3e; /* Red background color */
+  color: #ffffff; /* White text color */
+}
+
+/* Add hover effect for all buttons */
+.button:hover {
+  opacity: 0.8;
+}
+
+/* Add focus effect for all buttons */
+.button:focus {
+  outline: none;
+}
+
+.dark-output {
+  background-color: #555; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.set-default{
+  background-color: #007bff;
+  color: #ffffff;
+}
